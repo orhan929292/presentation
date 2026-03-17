@@ -1,0 +1,93 @@
+
+> tmp_project@0.1.0 dev
+> next dev
+
+▲ Next.js 16.1.7 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+✓ Ready in 1867ms
+○ Compiling /login ...
+ GET /login 200 in 6.3s (compile: 5.9s, render: 378ms)
+ GET /api/auth/session 200 in 3.2s (compile: 3.1s, render: 53ms)
+ GET /api/auth/providers 200 in 79ms (compile: 53ms, render: 26ms)
+ GET /api/auth/csrf 200 in 25ms (compile: 6ms, render: 20ms)
+prisma:query SELECT `main`.`User`.`id`, `main`.`User`.`name`, `main`.`User`.`email`, `main`.`User`.`password`, `main`.`User`.`role`, `main`.`User`.`createdAt`, `main`.`User`.`updatedAt` FROM `main`.`User` WHERE (`main`.`User`.`email` = ? AND 1=1) LIMIT ? OFFSET ?
+ POST /api/auth/callback/credentials 200 in 171ms (compile: 3ms, render: 168ms)
+ GET /api/auth/session 200 in 44ms (compile: 10ms, render: 33ms)
+ GET / 200 in 1383ms (compile: 1329ms, proxy.ts: 21ms, render: 32ms)
+ GET / 200 in 49ms (compile: 6ms, proxy.ts: 9ms, render: 33ms)
+ GET /api/presentations 200 in 474ms (compile: 448ms, proxy.ts: 6ms, render: 20ms)
+prisma:query SELECT `main`.`Presentation`.`id`, `main`.`Presentation`.`title`, `main`.`Presentation`.`content`, `main`.`Presentation`.`themeConfig`, `main`.`Presentation`.`userId`, `main`.`Presentation`.`createdAt`, `main`.`Presentation`.`updatedAt` FROM `main`.`Presentation` WHERE `main`.`Presentation`.`userId` = ? ORDER BY `main`.`Presentation`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Presentation`.`id`, `main`.`Presentation`.`title`, `main`.`Presentation`.`content`, `main`.`Presentation`.`themeConfig`, `main`.`Presentation`.`userId`, `main`.`Presentation`.`createdAt`, `main`.`Presentation`.`updatedAt` FROM `main`.`Presentation` WHERE `main`.`Presentation`.`userId` = ? ORDER BY `main`.`Presentation`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/presentations 200 in 25ms (compile: 5ms, proxy.ts: 7ms, render: 13ms)
+ GET /admin/settings 200 in 803ms (compile: 614ms, proxy.ts: 6ms, render: 183ms)
+ GET /api/auth/session 200 in 51ms (compile: 32ms, render: 19ms)
+ GET /login 200 in 79ms (compile: 4ms, render: 75ms)
+prisma:query SELECT `main`.`Setting`.`id`, `main`.`Setting`.`key`, `main`.`Setting`.`value` FROM `main`.`Setting` WHERE 1=1 LIMIT ? OFFSET ?
+ GET /api/settings 200 in 433ms (compile: 395ms, proxy.ts: 22ms, render: 16ms)
+ GET /login 200 in 124ms (compile: 4ms, render: 120ms)
+ GET /api/auth/session 200 in 46ms (compile: 33ms, render: 13ms)
+ GET /api/auth/providers 200 in 13ms (compile: 3ms, render: 9ms)
+ GET /api/auth/csrf 200 in 10ms (compile: 3ms, render: 8ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`User`.`id`, `main`.`User`.`name`, `main`.`User`.`email`, `main`.`User`.`password`, `main`.`User`.`role`, `main`.`User`.`createdAt`, `main`.`User`.`updatedAt` FROM `main`.`User` WHERE (`main`.`User`.`email` = ? AND 1=1) LIMIT ? OFFSET ?
+ POST /api/auth/callback/credentials 200 in 96ms (compile: 3ms, render: 93ms)
+ GET /api/auth/session 200 in 16ms (compile: 3ms, render: 13ms)
+ GET / 200 in 79ms (compile: 22ms, proxy.ts: 13ms, render: 45ms)
+ GET / 200 in 43ms (compile: 5ms, proxy.ts: 9ms, render: 29ms)
+ GET /api/presentations 200 in 27ms (compile: 4ms, proxy.ts: 8ms, render: 15ms)
+prisma:query SELECT `main`.`Presentation`.`id`, `main`.`Presentation`.`title`, `main`.`Presentation`.`content`, `main`.`Presentation`.`themeConfig`, `main`.`Presentation`.`userId`, `main`.`Presentation`.`createdAt`, `main`.`Presentation`.`updatedAt` FROM `main`.`Presentation` WHERE `main`.`Presentation`.`userId` = ? ORDER BY `main`.`Presentation`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`Presentation`.`id`, `main`.`Presentation`.`title`, `main`.`Presentation`.`content`, `main`.`Presentation`.`themeConfig`, `main`.`Presentation`.`userId`, `main`.`Presentation`.`createdAt`, `main`.`Presentation`.`updatedAt` FROM `main`.`Presentation` WHERE `main`.`Presentation`.`userId` = ? ORDER BY `main`.`Presentation`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/presentations 200 in 23ms (compile: 3ms, proxy.ts: 9ms, render: 11ms)
+ GET /admin/settings 200 in 111ms (compile: 4ms, proxy.ts: 6ms, render: 101ms)
+ GET /api/auth/session 200 in 71ms (compile: 36ms, render: 34ms)
+ GET /login 200 in 109ms (compile: 4ms, render: 106ms)
+prisma:query SELECT `main`.`Setting`.`id`, `main`.`Setting`.`key`, `main`.`Setting`.`value` FROM `main`.`Setting` WHERE 1=1 LIMIT ? OFFSET ?
+ GET /api/settings 200 in 17ms (compile: 3ms, proxy.ts: 6ms, render: 9ms)
+ GET /login 200 in 60ms (compile: 4ms, render: 56ms)
+ GET /api/auth/session 200 in 47ms (compile: 39ms, render: 8ms)
+ GET /api/auth/providers 200 in 10ms (compile: 3ms, render: 7ms)
+ GET /api/auth/csrf 200 in 9ms (compile: 3ms, render: 7ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`User`.`id`, `main`.`User`.`name`, `main`.`User`.`email`, `main`.`User`.`password`, `main`.`User`.`role`, `main`.`User`.`createdAt`, `main`.`User`.`updatedAt` FROM `main`.`User` WHERE (`main`.`User`.`email` = ? AND 1=1) LIMIT ? OFFSET ?
+ POST /api/auth/callback/credentials 200 in 91ms (compile: 3ms, render: 88ms)
+ GET /api/auth/session 200 in 14ms (compile: 2ms, render: 11ms)
+ GET / 200 in 31ms (compile: 4ms, proxy.ts: 7ms, render: 20ms)
+ GET / 200 in 44ms (compile: 6ms, proxy.ts: 8ms, render: 30ms)
+prisma:query SELECT `main`.`Presentation`.`id`, `main`.`Presentation`.`title`, `main`.`Presentation`.`content`, `main`.`Presentation`.`themeConfig`, `main`.`Presentation`.`userId`, `main`.`Presentation`.`createdAt`, `main`.`Presentation`.`updatedAt` FROM `main`.`Presentation` WHERE `main`.`Presentation`.`userId` = ? ORDER BY `main`.`Presentation`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/presentations 200 in 22ms (compile: 5ms, proxy.ts: 6ms, render: 11ms)
+prisma:query SELECT `main`.`Presentation`.`id`, `main`.`Presentation`.`title`, `main`.`Presentation`.`content`, `main`.`Presentation`.`themeConfig`, `main`.`Presentation`.`userId`, `main`.`Presentation`.`createdAt`, `main`.`Presentation`.`updatedAt` FROM `main`.`Presentation` WHERE `main`.`Presentation`.`userId` = ? ORDER BY `main`.`Presentation`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/presentations 200 in 20ms (compile: 3ms, proxy.ts: 5ms, render: 12ms)
+ GET /admin/settings 200 in 100ms (compile: 4ms, proxy.ts: 7ms, render: 89ms)
+ GET /api/auth/session 200 in 51ms (compile: 33ms, render: 18ms)
+ GET /login 200 in 83ms (compile: 5ms, render: 78ms)
+ GET /api/settings 200 in 26ms (compile: 4ms, proxy.ts: 8ms, render: 14ms)
+prisma:query SELECT `main`.`Setting`.`id`, `main`.`Setting`.`key`, `main`.`Setting`.`value` FROM `main`.`Setting` WHERE 1=1 LIMIT ? OFFSET ?
+ GET /login 200 in 91ms (compile: 4ms, render: 86ms)
+ GET /api/auth/session 200 in 58ms (compile: 40ms, render: 18ms)
+ GET /api/auth/providers 200 in 10ms (compile: 3ms, render: 7ms)
+ GET /api/auth/csrf 200 in 10ms (compile: 3ms, render: 7ms)
+prisma:query SELECT 1
+prisma:query SELECT `main`.`User`.`id`, `main`.`User`.`name`, `main`.`User`.`email`, `main`.`User`.`password`, `main`.`User`.`role`, `main`.`User`.`createdAt`, `main`.`User`.`updatedAt` FROM `main`.`User` WHERE (`main`.`User`.`email` = ? AND 1=1) LIMIT ? OFFSET ?
+ POST /api/auth/callback/credentials 200 in 96ms (compile: 3ms, render: 92ms)
+ GET /api/auth/session 200 in 13ms (compile: 3ms, render: 10ms)
+ GET / 200 in 113ms (compile: 5ms, proxy.ts: 7ms, render: 101ms)
+ GET / 200 in 37ms (compile: 4ms, proxy.ts: 12ms, render: 22ms)
+prisma:query SELECT `main`.`Presentation`.`id`, `main`.`Presentation`.`title`, `main`.`Presentation`.`content`, `main`.`Presentation`.`themeConfig`, `main`.`Presentation`.`userId`, `main`.`Presentation`.`createdAt`, `main`.`Presentation`.`updatedAt` FROM `main`.`Presentation` WHERE `main`.`Presentation`.`userId` = ? ORDER BY `main`.`Presentation`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/presentations 200 in 24ms (compile: 4ms, proxy.ts: 9ms, render: 11ms)
+prisma:query SELECT `main`.`Presentation`.`id`, `main`.`Presentation`.`title`, `main`.`Presentation`.`content`, `main`.`Presentation`.`themeConfig`, `main`.`Presentation`.`userId`, `main`.`Presentation`.`createdAt`, `main`.`Presentation`.`updatedAt` FROM `main`.`Presentation` WHERE `main`.`Presentation`.`userId` = ? ORDER BY `main`.`Presentation`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/presentations 200 in 22ms (compile: 3ms, proxy.ts: 7ms, render: 12ms)
+ GET /admin/settings 200 in 55ms (compile: 3ms, proxy.ts: 9ms, render: 42ms)
+prisma:query SELECT `main`.`Setting`.`id`, `main`.`Setting`.`key`, `main`.`Setting`.`value` FROM `main`.`Setting` WHERE 1=1 LIMIT ? OFFSET ?
+ GET /api/settings 200 in 27ms (compile: 11ms, proxy.ts: 10ms, render: 5ms)
+ GET /api/settings 200 in 17ms (compile: 3ms, proxy.ts: 5ms, render: 9ms)
+prisma:query SELECT `main`.`Setting`.`id`, `main`.`Setting`.`key`, `main`.`Setting`.`value` FROM `main`.`Setting` WHERE 1=1 LIMIT ? OFFSET ?
